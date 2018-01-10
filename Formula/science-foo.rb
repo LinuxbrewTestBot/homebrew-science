@@ -5,6 +5,11 @@ class ScienceFoo < Formula
   version "1.0"
   sha256 "897e5a4ee125ab09f2da4e2bcaf6cc4532cc5da6a2fa8251be4c349acaaa10ec"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "7144fd0956ad6d739ecf7dfa0141354ca0d1525e9693254c77863d69a35a496e" => :x86_64_linux
+  end
+
   def install
     system "make", "hello"
     bin.install "hello" => "sandbox-foo"
