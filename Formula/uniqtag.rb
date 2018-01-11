@@ -1,5 +1,10 @@
 class Uniqtag < Formula
   homepage "https://github.com/sjackman/uniqtag"
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "b1ed54bc17bc67bf765fe0aef97fc6bd2cdcb8a7b9e4747d76b0087d3426685e" => :x86_64_linux
+  end
+
   # doi "10.1101/007583"
   # tag "bioinformatics"
 
